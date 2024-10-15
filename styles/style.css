@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  min-inline-size: 360px;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+blockquote,
+ul,
+ol,
+li,
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+:root {
+  --bg-color: #F3EFEC;
+  --text-color: #312A4E;
+  --accent-color: #FFAB6B;
+  --main-font: 'Raleway';
+  --accent-font: 'STIX Two Text';
+}
+
+.page {
+  background-color: var(--bg-color);
+  color: var(--text-color, #312A4E);
+  font-family: var(--main-font, 'Raleway', sans-serif);
+}
+
+.heading {
+  font-family: var(--accent-font,'STIX Two Text', serif);
+  line-height: 0.9em;
+}
+
+.content-section {
+  padding: 0 5vi;
+}
