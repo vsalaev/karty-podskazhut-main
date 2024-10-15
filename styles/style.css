@@ -21,12 +21,6 @@ figure {
   margin: 0;
 }
 
-h1,
-h2,
-h3 {
-  text-align: center;
-}
-
 :root {
   --bg-color: #F3EFEC;
   --text-color: #312A4E;
@@ -42,8 +36,13 @@ h3 {
 }
 
 .heading {
+  text-align: center;
   font-family: var(--accent-font,'STIX Two Text', serif);
   line-height: 0.9em;
+}
+
+.header__title {
+  font-size: clamp(3.75rem, 2.5rem + 5.5556vw, 7.5rem);
 }
 
 .content-section {
